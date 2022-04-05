@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KIDNEY FAILURE DETECTION</title>
+        <link rel="shortcut icon" href="{{ url_for('static', filename='diabetes-favicon.ico') }}">
+        <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='styles.css') }}">
+        <script src="https://kit.fontawesome.com/5f3f547070.js" crossorigin="anonymous"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<div class="container">
+    <h1 class='container-heading'><span class="heading_font">KIDNEY FAIL DETECTION  </span></h1>
+           
+</div>
+
+       
+<div class="ml-container">
+       
+     <form action="{{ url_for('predict') }}" method="POST">
+        <label for="age">Age : </label>
+        <input type="text" id="age" name="age">
+        <br>
+
+        <label for="bp">Blood Pressure : </label>
+        <input type="text" id="bp" name="bp">
+        <br>    
+
+        <label for="al">Albumin : </label>
+        <input type="text" id="al" name="al">
+        <br>
+
+        <label for="pcc">Pus cell clumps : </label>
+        <input type="text" id="pcc" name="pcc">
+        <br>
+
+        <label for="bgr">Blood glucose : </label>
+        <input type="text" id="bgr" name="bgr">
+        <br>
+
+        <label for="bu">Blood urea: </label>
+        <input type="text" id="bu" name="bu">
+        <br>
+
+        <label for="sc">Serum creatinine: </label>
+        <input type="text" id="sc" name="sc">
+        <br>
+
+
+        <label for="hemo">Hemoglobin: </label>
+        <input type="text" id="hemo" name="hemo">
+        <br>
+
+        <label for="pcv">Packed cell volume: </label>
+        <input type="text" id="pcv" name="pcv">
+        <br>
+
+        <label for="htn">Hypertension: </label>
+        <input type="text" id="htn" name="htn">
+        <br>
+
+        <label for="dm"> Diabetes: </label>
+        <input type="text" id="dm" name="dm">
+        <br>
+
+        <label for="appet">Appet: </label>
+        <input type="text" id="appet" name="appet">
+        <br>
+        <br>
+
+        <input type="submit" value="Submit"><br><br>
+    </form>
+</div>
+</body>
+</html>
